@@ -8,14 +8,30 @@ desktop.ini
 .idea/
 *.swp
 *.swo
+*.tmp
 
-# Python（后续可能用到）
+# Python
 __pycache__/
 *.pyc
 .venv/
 venv/
 
-# 大文件 / 敏感信息（按需调整）
+# 数据文件（2GB，不进 Git；本地用米筐下载）
+growth_data/
+*.pkl
+
+# 临时调试文件
+ricequant_api.html
+rq_*.html
+*_fields.txt
+*_real.txt
+*_section.txt
+*_factors.txt
+*.bak
+
+# 日志 / 环境变量
 *.log
-*.tmp
 .env
+
+# Local assistant settings may contain credentials
+.claude/
